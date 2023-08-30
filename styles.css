@@ -1,0 +1,24 @@
+:root {
+  --background: #121721;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Hero Section */
+#hero-section {
+  height: 100vh; /* Define a altura como 100% da altura do viewport */
+}
+
+
+/* Info Tec Section */
+#tec-section {}
+
+
+/* Card */
+.card {}
+
+.card-tile {}
+
+.card-description {}
