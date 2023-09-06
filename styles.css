@@ -40,23 +40,6 @@ body {
   background: #fff;
  }
 
- / .hero-content .ellipse {
-  position: absolute;
-  width: 705px;
-  height: 868px;
-  top: 0;
-  left: 635px;
-}
-
-.hero-content .woman-interacting {
-  position: absolute;
-  width: 419px;
-  height: 405px;
-  top: 451px;
-  left: 855px;
-} /
-
-
 
 / Info Tec Section /
 #tec-section {
