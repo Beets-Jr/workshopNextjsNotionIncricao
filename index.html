@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg-icon" href="assets/beets.svg">
 
-    <title>Workshop Beets Jr | NextJs</title>
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <section id="hero-section">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg-icon" href="assets/beets.svg">
+
+  <title>Workshop Beets Jr | NextJs</title>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero-section">
+    <div class="hero-content">
+      <img class="logo-hero" src="assets/beets.svg">
+      <h1>Workshop Beets Jr.: Construindo Aplicações Interativas com Next.js e Notion</h1>
+      <h2>Aprenda, Explore, Crie: Desenvolva suas habilidades de programação de forma prática com as tecnologias do
+        momento! </h2>
+      <h3>Salve na agenda: 2 a 6 de outubro! </h3>
       <button>Garanta seu Lugar!</button>
-    </section>
+    </div>
+  </section>
 
-    <!-- Info Tec Section -->
-    <section id="tec-section">
+  <!-- Info Tec Section -->
+  <section id="tec-section">
+    <h2 class="title-tec">As Tecnologias mais soicitadas no mercado, confira o que você irá aprender!</h2>
 
-      <!-- Card -->
+    <div class="container-cards">
+      <!-- Cards -->
       <div class="card">
         <div class="card-title">
-          <h2>Title</h2>
-          <img src="" alt="">
+          <h2>Notion</h2>
+          <img class="logo" src="assets/notion.svg" alt="">
         </div>
-        <p class="card-description"">Description</p>
+        <p class="card-description">O Notion, uma plataforma versátil e poderosa, redefine a maneira como abordamos a organização e colaboração. Combinando notas, gerenciamento de tarefas, bancos de dados e mais.</p>
       </div>
 
-    </section>
+      <div class="card">
+        <div class="card-title">
+          <h2>NEXT</h2>
+          <img class="logo" src="assets/next.svg" alt="">
+        </div>
+        <p class="card-description">O framework Next.js, reconhecido por sua robustez, foi concebido para aprimorar aplicações web. Com funcionalidades avançadas e otimizações de desempenho, impulsionando a criação de projetos web modernos e dinâmicos.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <h2>HTML 5</h2>
+          <img class="logo" src="assets/html.svg" alt="">
+        </div>
+        <p class="card-description">Adquira conhecimento na linguagem de marcação oficial da web,
+          compreenda sua estrutura de tags e aprimore o conteúdo para obter melhores resultados nos mecanismos de busca.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <h2>CSS</h2>
+          <img class="logo" src="assets/css.svg" alt="">
+        </div>
+        <p class="card-description">Domine a arte de estilizar suas aplicações usando CSS, conferindo-lhes um apelo
+          único
+          e cativante.
+          Explore animações, transições, responsividade e uma variedade de recursos mágicos oferecidos pelo CSS.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <h2>TYPESCRIPT</h2>
+          <img class="logo" src="assets/typescript.svg" alt="">
+        </div>
+        <p class="card-description">Desenvolva uma compreensão sólida dos princípios do TypeScript, capacitando-se ao
+          criar uma aplicação
+          com esta linguagem de programação poderosa, altamente requisitada no mercado atual.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <h2>REACT</h2>
+          <img class="logo" src="assets/react.svg" alt="">
+        </div>
+        <p class="card-description">Desenvolvida pela equipe de programadores do Facebook, esta biblioteca JavaScript se
+          estabeleceu
+          como uma das tecnologias dominantes no mercado atual.</p>
+      </div>
+    </div>
+  </section>
 
   <script src="https://unpkg.com/scrollreveal"></script>
-  </body>
+</body>
+
 </html>
