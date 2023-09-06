@@ -1,24 +1,116 @@
 :root {
   --background: #121721;
+
+  --text-color: #fff;
 }
 
 body {
   background-color: var(--background);
+  font-family: Inter, sans-serif;
+  color: var(--text-color);
+  text-align: center;
 }
 
-/* Hero Section */
+/* Hero Section /
 #hero-section {
-  height: 100vh; /* Define a altura como 100% da altura do viewport */
+  height: 100vh; / Define a altura como 100% da altura do viewport /
+}
+
+.hero-content h2 {
+ font-weight: 400;
+}
+
+.hero-content h3 {
+  font-weight: 400;
+ }
+
+ .hero-content button {
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+  padding: 1.4375rem 1.25rem 1.3125rem 0.875rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #2B6BB1;
+ }
+
+ .hero-content button:hover {
+  transform: scale(1.1);
+  color: var(--background);
+  background: #fff;
+ }
+
+ / .hero-content .ellipse {
+  position: absolute;
+  width: 705px;
+  height: 868px;
+  top: 0;
+  left: 635px;
+}
+
+.hero-content .woman-interacting {
+  position: absolute;
+  width: 419px;
+  height: 405px;
+  top: 451px;
+  left: 855px;
+} /
+
+
+
+/ Info Tec Section /
+#tec-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tec-section .title-tec {
+  font-size: 2.25rem;
+  margin-bottom: 7.5rem;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/ Card */
+.card {
+  background-color: #1A212D;
+  border-radius: 16px;
+
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  min-width: 8rem;
+  min-height: 8rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.card-title .logo {
+  height: 30px;
+  width: 30px;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  height: 120px;
+  width: 200px;
 }
 
 
-/* Info Tec Section */
-#tec-section {}
-
-
-/* Card */
-.card {}
-
-.card-tile {}
-
-.card-description {}
+.card-description {
+  word-wrap: break-word;
+}
