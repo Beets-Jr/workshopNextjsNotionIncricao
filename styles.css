@@ -21,27 +21,63 @@ html, body, button {
 }
 
 /* Hero Section */
-#hero-section {
-  height: 100vh;
+.hero-imagem {
+  display: none;
+}
+
+.span {
+  margin-left: 1rem;
+  display: inline-block;
+  color:#55a7ff;
+  font-weight: 700;
+  animation: pulse 1s infinite alternate; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  100% {
+    transform: scale(1.2); /* Tamanho aumentado (pulso) */
+  }
+}
+
+.hero-section {
+  max-width: 1300px;
   margin: 2rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
-.hero-content h2 {
-  font-weight: 400;
+.hero-content img {
+  width: 200px;
+  height: 200px;
 }
 
-.hero-content h3 {
-  font-weight: 400;
+
+.hero-content-title h1 {
+  font-size: 3rem;
 }
 
-.hero-content button {
+
+.hero-content-description h2 {
+  font-weight: 400;
+  max-width: 800px;
+}
+
+.hero-content-description h3 {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  margin-top: 3.75rem;
+}
+
+.hero-content-description button {
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--text-color);
@@ -51,35 +87,47 @@ html, body, button {
   background: #2B6BB1;
 
   cursor: pointer;
+
+  min-width: 300px;
+  box-shadow: 3px 3px 5px 0px rgba(2, 90, 206, 0.5);
 }
 
-.hero-content button:hover {
+.hero-content-description button:hover {
   transform: scale(1.1);
   filter: opacity(0.9);
 }
 
 /* Info Tec Section */
-#tec-section {
+.tec-section {
+  margin-top: 265px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  margin: 4rem;
-  margin-top: 8rem;
 }
 
-#tec-section .title-tec {
+.tec-section .title-tec {
   font-size: 2.25rem;
   margin-bottom: 4rem;
+  padding: 1rem;
+  max-width: 1200px;
 }
 
 .container-cards {
+  max-width: 1200px;
+  margin-bottom: 4rem;
+  
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
   gap: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.container-cards div {
+  flex: 1 1 300px;
 }
 
 /* Card */
@@ -91,8 +139,8 @@ html, body, button {
   text-align: left;
   border: 1px solid rgba(255, 255, 255, 0.20);
 
-  min-width: 8rem;
-  min-height: 8rem;
+  min-height: 230px;
+  max-width: 250px;
 }
 
 .card-title {
@@ -108,11 +156,63 @@ html, body, button {
 }
 
 .card-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
   height: 120px;
   width: 200px;
 }
 
-.card-description {
-  word-wrap: break-word;
+@media (min-width: 1024px) {
+  .hero-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .hero-content-description {
+    text-align: left;
+    z-index: 2;
+  }
+
+  .hero-imagem {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+  }
+
+  .tec-section {
+    margin-top: 30rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hero-content-description {
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 10%;
+    z-index: 2;
+  }
+
+  .hero-content-description h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content-description button {
+    width: 400px;
+  }
 }
